@@ -1,0 +1,160 @@
+.footer-section {
+    position: relative;
+    padding: 60px 0 30px;
+    /* color: white; */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.footer-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.footer-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer text and layout */
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* color: #fff; */
+}
+
+.footer-info li,
+.footer-links li,
+.footer-social li {
+    list-style: none;
+    margin-bottom: 10px;
+    /* color: #ddd; */
+}
+
+.footer-social li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-social li i {
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: black;
+}
+
+/* On hover, change text color */
+.footer-social li:hover {
+    color: #a2b900;
+    /* same as icon hover color */
+}
+
+/* Animate only the icon */
+.footer-social li i {
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icon animation and color change */
+.footer-social li:hover i {
+    transform: scale(1.2);
+    color: #a2b900;
+}
+
+
+/* Hover only affects icon */
+.footer-social li i:hover {
+    transform: scale(1.2);
+    /* Zooms slightly */
+    color: #a2b900;
+    /* Changes color */
+}
+
+
+.footer-links a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer-links a:hover {
+    color: #a2b900;
+}
+
+.footer-social i {
+    margin-right: 8px;
+    color: #a2b900;
+}
+
+.footer-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.subscribe-btn {
+    background-color: #a2b900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .footer-col {
+        margin-bottom: 30px;
+    }
+
+    .footer-section {
+        padding: 40px 20px 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .footer-title {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .footer-title {
+        margin-left: 30px;
+    }
+}

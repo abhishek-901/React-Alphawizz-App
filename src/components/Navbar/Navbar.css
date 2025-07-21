@@ -1,0 +1,74 @@
+.navbar {
+    transition: all 0.0s ease;
+    background-color: white;
+    z-index: 999;
+}
+
+.nav-link:hover {
+    color: #BDD239;
+}
+
+.navbar-nav {
+    padding-right: 130px;
+}
+
+/* Button styling */
+.sidebar-toggle-btn {
+    background-color: #BDD239 !important;
+    color: white !important;
+    border-radius: 40px;
+    border: none;
+    height: 50px;
+}
+
+.sidebar-toggle-btn:focus,
+.sidebar-toggle-btn:active {
+    color: white !important;
+    box-shadow: none;
+}
+
+/* At top (Home section): center with margin */
+.navbar-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    max-width: 80%;
+    border-radius: 15px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* When scrolling up: full-width fixed */
+.navbar-fixed-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* When scrolling down: hide */
+.navbar-hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* Responsive - small screen */
+@media screen and (max-width: 991px) {
+    .navbar-top {
+        margin: 0;
+        border-radius: 0;
+        max-width: 100%;
+        height: 85px;
+    }
+}

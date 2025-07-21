@@ -1,0 +1,196 @@
+.process-section {
+    position: relative;
+    padding: 3rem 0;
+}
+
+.step-col {
+    margin-bottom: 2rem;
+}
+
+.step-circle {
+    width: 150px;
+    height: 150px;
+    background: #f7f7f7;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-number {
+    background: #cde13d;
+    color: white;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.step-icon {
+    font-size: 36px;
+    color: #000;
+}
+
+.step-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+}
+
+.step-desc {
+    font-size: 16px;
+    color: #666;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.feature-arrow {
+    position: absolute;
+    top: 52%;
+    left: 29%;
+    width: 160px;
+    z-index: 1;
+}
+
+.feature-arrow1 {
+    position: absolute;
+    top: 52%;
+    left: 58%;
+    width: 160px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 426px) {
+    .step-number {
+        padding: 6px 4px;
+
+    }
+
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .step-col {
+        margin-bottom: 30px;
+    }
+
+    .step-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .step-icon {
+        font-size: 28px;
+    }
+
+    .step-title {
+        font-size: 18px;
+    }
+
+    .step-desc {
+        font-size: 15px;
+    }
+
+    .feature-arrow {
+        display: none;
+    }
+
+    .feature-arrow1 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .feature-arrow {
+        position: absolute;
+        top: 52%;
+        left: 28%;
+        width: 125px;
+        z-index: 1;
+    }
+
+    .feature-arrow1 {
+        position: absolute;
+        top: 52%;
+        left: 60%;
+        width: 125px;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .step-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .step-icon {
+        font-size: 24px;
+    }
+
+    .step-number {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .step-title {
+        font-size: 16px;
+    }
+
+    .step-desc {
+        font-size: 14px;
+    }
+
+    .bounce-img {
+        display: none;
+    }
+
+
+}
+
+.bounce-img {
+    animation: bounceUpDown 2.5s ease-in-out infinite;
+}
+
+/* Bouncing Animation */
+@keyframes bounceUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Upward movement */
+    }
+}
+
+/* Hover Effects - Slower with Inner Expansion */
+.step-circle {
+    transition: background-color 0.8s ease, transform 0.8s ease;
+    transform: scale(1);
+}
+
+.step-circle:hover {
+    background-color: #888;
+    transform: scale(1.05);
+    /* slightly grow from center */
+}
+
+.step-circle .step-number {
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.step-circle:hover .step-number {
+    background-color: #fff;
+    color: #000;
+}

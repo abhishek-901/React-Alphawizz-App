@@ -1,0 +1,267 @@
+.hero-section {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    /* padding: 60px 20px; */
+    /* position: relative; */
+    overflow: hidden;
+
+}
+
+.hero-mobile-img {
+    max-width: 40%;
+    height: auto;
+    /* margin-left: 330px; */
+    /* margin-top: 70px; */
+
+}
+
+.tagline {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    color: #000;
+}
+
+.hero-text h2 {
+    color: #bfd730;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 600;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+.description {
+    color: #555;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+@media screen and (max-width:426px) {
+    .tagline {
+        display: none;
+    }
+
+    .farm-text {
+        display: none;
+    }
+
+    .icon-image-sec {
+        display: none;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .nature-img {
+        display: none;
+    }
+
+    .vegitable-img {
+        display: none;
+    }
+
+    .shape-img-left {
+        display: none;
+    }
+
+    .shape-img-right {
+        display: none;
+    }
+
+    .best-text {
+        display: none;
+    }
+
+    .feature-text {
+        display: none;
+    }
+
+    .feature-text-2 {
+        display: none;
+    }
+
+    .hero-mobile-img {
+        max-width: 40%;
+        height: auto;
+        /* margin-left: 330px; */
+        /* margin-top: 70px; */
+        position: absolute;
+
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+
+    .hero-text {
+        margin-top: 30px;
+    }
+}
+
+.nature-img,
+.vegitable-img {
+    max-height: 67px;
+    width: auto;
+}
+
+.icon-img {
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.feature-text-2 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.shape-wrapper {
+    position: relative;
+    /* width: 100%;
+    height: 100px; */
+    /* Ensure there's space */
+    margin-top: 40px;
+}
+
+.shape-img-left,
+.shape-img-right {
+    position: absolute;
+    /* width: 80px; */
+    height: auto;
+    z-index: 2;
+}
+
+.shape-img-left {
+    right: 60px;
+    bottom: 50px;
+}
+
+.shape-img-right {
+    right: 0px;
+
+    top: 10px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 35%;
+    }
+
+    .hero-mobile-img {
+        max-width: 40%;
+        height: auto;
+        /* margin-left: 260px; */
+        /* margin-top: 70px; */
+    }
+
+    .shape-img-left {
+        right: 17px;
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .hero-mobile-img {
+        height: 94%;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .hero-mobile-img {
+        max-width: 60% !important;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-mobile-img {
+        /* margin: 20px auto; */
+        display: block;
+        /* max-width: 90%; */
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero-mobile-img {
+        max-width: 64%;
+        /* height: auto; */
+        /* margin-left: 111px; */
+        /* margin-top: 33px; */
+        /* position: absolute; */
+        top: 5%;
+        /* left: 0; */
+
+    }
+
+
+    .shape-img-left {
+        right: 60px;
+        bottom: 50px;
+        display: none;
+    }
+
+    .shape-img-right {
+        right: 0px;
+        top: 10px;
+        display: none;
+    }
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 49%;
+    }
+
+}
