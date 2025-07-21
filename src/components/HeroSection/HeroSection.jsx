@@ -25,7 +25,7 @@ export default function HeroSection() {
             <div className="hero-content text-center text-white">
                 <p className="subtext" data-aos="zoom-in-right" data-aos-duration="2000"
                     data-aos-once="true" >KEEP WITH FOODANO</p>
-                <h1 className="display-1 fw-bold" data-aos="fade-up" data-aos-duration="2000"
+                <h1 className="display-2 fw-bold" data-aos="fade-up" data-aos-duration="2000"
                     data-aos-once="true">DELICIOUS AND<br />ITALIAN</h1>
             </div>
         </div>

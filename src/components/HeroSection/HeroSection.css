@@ -2,29 +2,24 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    /* full screen height */
     padding: 0;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-/* BACKGROUND IMAGE */
 .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-
-
-/* .hero-section {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-} */
 
 .hero-content {
     position: absolute;
@@ -32,6 +27,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .subtext {
@@ -46,6 +43,7 @@
     z-index: 2;
 }
 
+/* Decorative shapes */
 .shape1 {
     bottom: 66%;
     left: 28%;
@@ -64,40 +62,66 @@
     width: 19%;
 }
 
-@media screen and (max-width:376px) {
+/* Large Mobile (≤ 425px) */
+@media screen and (max-width: 425px) {
     .hero-section {
-        height: 50vh !important;
+        height: 60vh;
+    }
+
+    .hero-img {
+        height: 60vh;
+    }
+
+    .hero-content {
+        top: 50%;
+    }
+
+    .shape1 {
+        bottom: 75%;
+        left: 30%;
+        width: 120px;
+    }
+
+    .shape2,
+    .shape3 {
+        display: none !important;
+    }
+
+    .display-1 {
+        font-size: calc(0.625rem + 4.5vw);
+        font-weight: 300;
+        line-height: 1.2;
     }
 }
 
+/* Small Mobile (≤ 376px) */
+@media screen and (max-width: 376px) {
+    .hero-section {
+        height: 50vh;
+    }
 
+    .hero-img {
+        height: 50vh;
+    }
 
+    .shape1 {
+        width: 100px;
+        left: 32%;
+    }
+}
+
+/* Tablet (≤ 768px) */
 @media screen and (max-width: 768px) {
     .hero-section {
         height: 74vh;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-
     }
-}
 
-
-@media screen and (max-width:768px) {
     .hero-img {
-        width: 100%;
         height: 74vh;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
     }
 
-    .shape3 {
-        top: 17%;
-        right: 10%;
-        width: 19%;
+    .hero-content {
+        top: 62%;
     }
 
     .shape1 {
@@ -105,95 +129,4 @@
         left: 33%;
         width: 160px;
     }
-
-    .subtext {
-        letter-spacing: 0.5rem;
-        margin-bottom: 1rem;
-        font-weight: 500;
-        color: #858585;
-    }
-
-    .hero-content {
-        position: absolute;
-        top: 44%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-    }
-}
-
-
-@media screen and (max-width:425px) {
-    .shape1 {
-        bottom: 74%;
-        left: 31%;
-        width: 120px;
-    }
-
-
-
-    .hero-img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .hero-content {
-        position: absolute;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .hero-content {
-        position: absolute;
-        /* top: 35%; */
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-    }
-
-    .hero-img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    .display-1 {
-        font-weight: 300;
-        line-height: 1.2;
-        font-size: calc(0.625rem + 4.5vw);
-    }
-
-    @media (max-width: 425px) {
-
-        .shape2,
-        .shape3 {
-            display: none !important;
-        }
-    }
-
-    @media (max-width: 993px) {
-        .hero-section {
-            text-align: center;
-            background-size: cover;
-            background-position: center;
-            height: 74vh;
-        }
-    }
-
 }
